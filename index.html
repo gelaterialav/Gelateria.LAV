@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gelateria LAV – Gelato artigianale a Milano</title>
+  <meta name="description" content="Gelateria LAV: gelato artigianale con 80 gusti in rotazione. Aperto dalle 11:00/12:00/13:00 fino alle 23:30. Via Vincenzo Monti 57/A, Milano.">
+  <meta property="og:title" content="Gelateria LAV – Gelato artigianale a Milano">
+  <meta property="og:description" content="80 gusti in rotazione. Ogni giorno troverai gusti unici, inclusi fermentati.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="format-detection" content="telephone=no">
+  <style>
+    :root {
+      /* Brightened brand palette */
+      --bg: #ffe2b8;         /* brighter light-orange background */
+      --bg-accent: #fff0dd;  /* soft gradient top */
+      --fg: #2f2112;         /* dark-brown text */
+      --accent: #0f806a;     /* brighter dark-emerald */
+      --accent-strong: #0a5a4b;
+      --card: #fffaf3;       /* card background */
+      --stroke: rgba(47, 33, 18, 0.14);
+      --muted: #6b5a45;
+      --badge-bg: #ffc67a;   /* brighter badge */
+      --badge-fg: #4a2b0f;
+      --glow: rgba(255, 167, 66, 0.45);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: linear-gradient(180deg, var(--bg-accent) 0%, var(--bg) 60%); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 30px 22px 36px; }
+    header { text-align: center; padding: 20px 0 10px; }
+    .logo-wrap {
+      width: 150px; height: 150px; margin: 0 auto 10px; position: relative;
+      border-radius: 50%;
+      padding: 6px;
+      background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fff6ea 60%, #ffd9a6 100%);
+      box-shadow: 0 8px 30px var(--glow), 0 2px 16px rgba(0,0,0,.08);
+    }
+    .logo {
+      width: 100%; height: 100%; display:block; border-radius: 50%; object-fit: cover;
+      border: 3px solid #ffffff;
+    }
+    .brand { font-size: 0; line-height: 0; height: 0; overflow: hidden; }
+    .tag { margin-top: 8px; font-size: 19px; color: var(--fg); font-weight: 700; letter-spacing: .2px; }
+    .card { background: var(--card); border-radius: 18px; padding: 22px; box-shadow: 0 2px 22px rgba(0,0,0,.07); margin: 18px 0; border: 1px solid var(--stroke); }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .btn { display: inline-block; padding: 15px 20px; border-radius: 14px; text-decoration: none; font-weight: 800; border: 2px solid transparent; transition: transform .08s ease, box-shadow .2s ease; }
+    .btn.primary { background: linear-gradient(180deg, var(--accent) 0%, var(--accent-strong) 100%); color: #ffffff; box-shadow: 0 6px 18px rgba(15,128,106,.25); }
+    .btn.secondary { background: #ffffff; color: var(--accent); border-color: var(--accent); box-shadow: 0 2px 10px rgba(15,128,106,.10); }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,.12); }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .muted { color: var(--muted); }
+    footer { text-align: center; font-size: 14px; padding: 28px; color: var(--muted); }
+    .hours { list-style: none; padding: 0; margin: 8px 0 0; }
+    .hours li { display: flex; justify-content: space-between; border-bottom: 1px dashed var(--stroke); padding: 9px 0; }
+    .badge { display:inline-block; padding: 6px 12px; background: var(--badge-bg); color: var(--badge-fg); border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: .35px; }
+    h2 { margin: 0 0 10px 0; }
+    .lead { font-size: 18px; }
+    .highlight { background: linear-gradient(90deg, rgba(255,229,170,.7), rgba(255,199,122,.35)); padding: 2px 6px; border-radius: 8px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "IceCreamShop",
+    "name": "Gelateria LAV",
+    "description": "Gelateria artigianale con 80 gusti in rotazione. Aperto fino alle 23:30.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Vincenzo Monti 57/A",
+      "addressLocality": "Milano",
+      "postalCode": "20145",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 351 394 3447",
+    "hasMap": "https://maps.google.com/?q=Gelateria+LAV,+Via+Vincenzo+Monti+57%2FA,+Milano",
+    "sameAs": ["https://www.instagram.com/gelateria.lav/"]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo-wrap">
+        <img class="logo" src="logo-gelateria-lav.jpg" alt="Logo Gelateria LAV circolare">
+      </div>
+      <div class="brand">Gelateria LAV</div>
+      <div class="tag">Gelato artigianale • <span class="highlight">80 gusti in rotazione</span></div>
+      <div style="margin-top:10px"><span class="badge">Aperto fino alle 23:30</span></div>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        <div>
+          <h2>Vieni a trovarci</h2>
+          <p class="lead">Via Vincenzo Monti 57/A, 20145 Milano</p>
+          <div class="cta">
+            <a class="btn primary" href="https://maps.google.com/?q=Gelateria+LAV,+Via+Vincenzo+Monti+57%2FA,+Milano" target="_blank" rel="noopener">Come arrivare (Google Maps)</a>
+            <a class="btn secondary" href="tel:+393513943447">Chiama +39&nbsp;351&nbsp;394&nbsp;3447</a>
+            <a class="btn secondary" href="https://www.instagram.com/gelateria.lav/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+        <div>
+          <h2>Orari</h2>
+          <ul class="hours">
+            <li><span>Lunedì</span> <strong>13:00 – 23:30</strong></li>
+            <li><span>Martedì</span> <strong>13:00 – 23:30</strong></li>
+            <li><span>Mercoledì</span> <strong>13:00 – 23:30</strong></li>
+            <li><span>Giovedì</span> <strong>13:00 – 23:30</strong></li>
+            <li><span>Venerdì</span> <strong>11:00 – 23:30</strong></li>
+            <li><span>Sabato</span> <strong>13:00 – 23:30</strong></li>
+            <li><span>Domenica</span> <strong>12:00 – 23:30</strong></li>
+          </ul>
+          <p class="muted" style="margin-top:8px">* Gli orari possono variare in base alla stagione o a eventi speciali.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Perché LAV</h2>
+      <p>Ingredienti selezionati, lavorazioni artigianali e gusti unici, inclusi fermentati come mango e albicocca. <strong>Ogni giorno troverai</strong> una selezione di circa 25 gusti dai nostri 80 in rotazione.</p>
+    </div>
+
+    <footer>
+      © Gelateria LAV · Milano · Tutti i diritti riservati
+    </footer>
+  </div>
+</body>
+</html>
